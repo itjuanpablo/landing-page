@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+.logo h1 {
+  color: black;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-left: 0.8rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  color: DarkSlateGrey;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  color: white;
+  background-color: DarkSlateGrey;
+}
+
+.middle {
+  display: flex;
+  max-width: 100%;
+  margin-top: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.right img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.left {
+  max-width: 100%;
+}
+
+.title h1 {
+  font-size: 50px;
+  color: black;
+}
+
+.left p {
+  color: black;
+  line-height: 2.5rem;
+}
+
+button {
+  color: white;
+  background-color: black;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: DarkSlateGrey;
+}
+
+aside {
+  display: none;
+}
+
+@media screen and (max-width: 740px) {
+  ul {
+    display: none;
+  }
+
+  .links {
+    display: block;
+  }
+
+  .logo {
+    margin-right: 15rem;
+  }
+
+  aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+  }
+
+  #scroll-menu {
+    background-color: black;
+    width: 0;
+    height: 100vh;
+    transition: 0.3s all;
+  }
+
+  .icon-menu ion-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+    color: blue;
+  }
+
+  #scroll-menu ul {
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    line-height: 5rem;
+  }
+
+  #scroll-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  #scroll-menu ul li a:hover {
+    color: black;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: white;
+  }
+
+  .c-icon {
+    margin-top: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow: hidden;
+    color: white;
+  }
+
+  .c-icon span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .title h1 {
+    font-size: 2.2rem;
+    margin-left: 1.5rem;
+  }
+
+  .left p {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    width: 450px;
+  }
+
+  button {
+    margin-left: 1.5rem;
+  }
+
+  .right img {
+    max-width: 100%;
+    width: 450px;
+    margin-top: 4.5rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .right img {
+    margin-left: 1.2rem;
+  }
+
+  .left p {
+    width: 300px;
+  }
+}
